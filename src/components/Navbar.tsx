@@ -4,12 +4,12 @@ import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-sidebar-border bg-sidebar backdrop-blur supports-[backdrop-filter]:bg-sidebar/95">
       <div className="flex h-14 items-center px-4">
-        <SidebarTrigger />
+        <SidebarTrigger className="text-sidebar-foreground hover:bg-sidebar-accent" />
         <div className="flex flex-1 items-center justify-between ml-4">
-          <h1 className="text-lg font-semibold">Kadastre</h1>
-          <Button variant="ghost" size="icon">
+          <h1 className="text-lg font-semibold text-sidebar-foreground">Kadastre</h1>
+          <Button variant="ghost" size="icon" className="text-sidebar-foreground hover:bg-sidebar-accent">
             <User className="h-5 w-5" />
           </Button>
         </div>
